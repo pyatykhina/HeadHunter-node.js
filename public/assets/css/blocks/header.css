@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo__image {
+    color: #d4131c;
+    font-size: 69px;
+}
+ 
+.menu__list {
+    display: flex;
+}
+
+.menu__link {
+    color: #000;
+    font-size: 30px;
+}
+
+.menu__item:last-child {
+    margin-left: 50px;
+}

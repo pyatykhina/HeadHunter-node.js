@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    color: #000;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.sprite {
+    background-image: url("../../images/socials/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 20px; 
+}
+
+.sprite-facebook {
+    width: 30px;
+    height: 30px;
+    background-position: -20px -20px;
+}
+
+.sprite-instagram {
+    width: 30px;
+    height: 30px;
+    background-position: -90px -20px;
+}
+
+.sprite-twitter {
+    width: 37px;
+    height: 30px;
+    background-position: -160px -20px;
+}
+
+.sprite-vk {
+    width: 53px;
+    height: 30px;
+    background-position: -237px -20px;
+}

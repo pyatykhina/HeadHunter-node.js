@@ -1,0 +1,30 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search__input {
+    height: 40px;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 1%;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.search__button {
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #d4131c;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{htmlWebpackPlugin.options.title}}</title>
+        <link rel='stylesheet' href='/assets/css/style.css'>
+    </head>
+    <body>
+        <div class="container">
+            {{> header}}
+            <div class="content vacancies">
+                {{> search}}
+                {{> categories}}
+                <div class="vacancies__main">
+                    {{> filters}}
+                </div>
+            </div>
+            {{> footer}}
+        </div>
+    </body>
+</html>

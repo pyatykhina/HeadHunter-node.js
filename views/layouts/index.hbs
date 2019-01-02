@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{htmlWebpackPlugin.options.title}}</title>
+        <link rel='stylesheet' href='/assets/css/style.css'>
+    </head>
+    <body>
+        <div class="container main-container">
+            {{> header}}
+            <div class="content index">
+                <div class="index__title">Работа </br> для каждого</div>
+                <div class="index__buttons">
+                    <button class="index__button">Разместить вакансию</button>
+                    <button class="index__button">Разместить резюме</button>
+                </div>
+            </div>
+            {{> footer}}
+        </div>
+    </body>
+</html>
