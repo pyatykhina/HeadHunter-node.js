@@ -9,6 +9,14 @@ var indexRouter = require('./routes/index');
 var app = express();
 
 // view engine setup
+var hbs = require( 'express-handlebars' )
+
+app.engine('hbs', hbs({
+  extname: 'hbs', 
+  layoutsDir: __dirname + '/views/layouts/',
+  partialsDir: __dirname + '/views/blocks/'
+}));
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -35,15 +43,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-var hbs = require( 'express-handlebars' )
-
-app.engine( 'hbs', hbs( { 
-  extname: 'hbs', 
-  defaultLayout: 'index', 
-  partialsDir: __dirname + '/views/blocks/'
-} ) );
-
-app.set( 'view engine', 'hbs' );
 
 module.exports = app;
