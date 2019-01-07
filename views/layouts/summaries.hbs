@@ -13,7 +13,13 @@
                 {{> categories}}
                 <div class="summaries__main">
                     {{> filters}}
+                    <ul class="summaries__list">
+                        
+                    </ul>
                 </div>
+                <form class="form" action="/summaries/add" method="POST" enctype="application/x-www-form-urlencoded">
+                    {{> form}}
+                </form>
             </div>
             {{> footer}}
         </div>

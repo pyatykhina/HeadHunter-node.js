@@ -1,16 +1,15 @@
-<div class="form">
     <div class="form__title">Не нашли то, что искали?</div>
     <div class="form__columns">
         <div class="form__column">
-            <input type="text" class="form__input" placeholder="Имя">
-            <input type="text" class="form__input" placeholder="Номер телефона">
-            <input type="text" class="form__input" placeholder="Зарплата">
+            <input type="text" class="form__input" name="name" placeholder="Имя">
+            <input type="text" class="form__input" name="phone" placeholder="Номер телефона">
+            <input type="text" class="form__input" name="salary" placeholder="Зарплата">
         </div>
         <div class="form__column">
-            <input type="text" class="form__input" placeholder="Город">
-            <input type="text" class="form__input" placeholder="Электронная почта">
-            <select name="select" class="form__input form__select" placeholder="Категория">
-                <option selected value="s0" class="form__categories-option">Не выбрано</option>
+            <input type="text" class="form__input" name="town" placeholder="Город">
+            <input type="text" class="form__input" name="email" placeholder="Электронная почта">
+            <select required class="form__input form__select" name="category">
+                <option selected value="s0" class="form__categories-option" >Не выбрано</option>
                 <option value="s1" class="form__categories-option">Административный персонал</option>
                 <option value="s2" class="form__categories-option">Банки, инвестиции</option>
                 <option value="s3" class="form__categories-option">Безопасность</option>
@@ -35,8 +34,7 @@
             </select>
         </div>
      </div>
-    <textarea class="form__input form__textarea" placeholder="Текст"></textarea>
+    <textarea class="form__input form__textarea" name="text" placeholder="Текст"></textarea>
     <div class="form__button">
-        <input type="submit" class="form__submit" placeholder="Отправить">
+        <input type="submit" class="form__submit" name="" value="отправить">
     </div>
-</div>

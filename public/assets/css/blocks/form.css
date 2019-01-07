@@ -4,6 +4,8 @@
     padding: 5%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .form__title {
@@ -54,14 +56,16 @@
 }
 
 .form__submit {
-    background-color: #d4131c;
+    height: 40px;
     border: none;
-    color: #fff;
-    border-radius: 10px;
     font-size: 20px;
-    font-weight: bold;
+    color: #fff;
+    font-style: bold;
     text-transform: uppercase;
-    padding: 1.5%;    
+    background: #d4131c;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 7px;
     outline: none;
     cursor: pointer;
 }

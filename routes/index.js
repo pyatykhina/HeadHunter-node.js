@@ -9,8 +9,9 @@ const ctrlSummaries = require('../controllers/summaries');
 router.get('/', ctrlHome.getHomePage);
 
 router.get('/vacancies', ctrlVacancies.getVacanciesPage);
+router.post('/vacancies/add', ctrlVacancies.addVacancy);
 
 router.get('/summaries', ctrlSummaries.getSummariesPage);
+router.post('/summaries/add', ctrlSummaries.addSummary);
 
 module.exports = router;
-
