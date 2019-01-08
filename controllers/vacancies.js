@@ -1,7 +1,7 @@
 const http = require('request');
 
 const apiOptions = {
-  server: "http://localhost:3005"
+  server: "http://localhost:3006"
 }
 
 module.exports.getVacanciesPage = (req, res, next) => {
@@ -25,7 +25,7 @@ module.exports.addVacancy = (req, res) => {
       method: "POST",
       json: {
         date: req.body.date,
-        name: req.body.name,
+        title: req.body.title,
         phone: req.body.phone,
         salary: req.body.salary,
         town: req.body.town,

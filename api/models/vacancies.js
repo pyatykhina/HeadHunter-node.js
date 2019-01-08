@@ -7,15 +7,17 @@ const mongoose = require('mongoose'),
         type: Date,
         default: Date.now,
     },
-    name: {
+    title: {
       type: String,
-      default: "Имя не указано"
+      default: "Название не указано"
     },
     phone: {
-      type: Number
+      type: String,
+      default: "Телефон не указан"
     },
     salary: {
-      type: Number
+      type: String,
+      default: "Зарплата не указана"
     },
     town: {
       type: String, 

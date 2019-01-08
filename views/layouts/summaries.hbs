@@ -13,11 +13,33 @@
                 {{> categories}}
                 <div class="summaries__main">
                     {{> filters}}
-                    <ul class="summaries__list">
-                        
+                    <ul class="list">
+                        {{#each summaries}}
+                            <li class="list__item">
+                                <div class="list__line">
+                                    <div class="list__column">
+                                        <div class="list__title">{{this.title}}</div>
+                                        <div class="list__town">{{this.town}}</div>
+                                    </div>
+                                    <div class="list__salary">{{this.salary}} руб.</div>
+                                </div>
+                                <div class="list__text">{{this.text}}</div>
+                                <div class="list__line">
+                                    <div class="list__column">
+                                        <a href="tel:{{this.phone}}" class="list__phone">{{this.phone}}</a>
+                                        <a href="mailto:{{this.email}}" class="list__email">{{this.email}}</a>
+                                    </div>
+                                    <div class="list__column">
+                                        <div class="list__category">{{this.category}}</div>
+                                        <div class="list__date">{{this.date}}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        {{/each}}
                     </ul>
                 </div>
                 <form class="form" action="/summaries/add" method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="form__title">Не нашли то, что искали?<br>Добавьте своё резюме</div>
                     {{> form}}
                 </form>
             </div>

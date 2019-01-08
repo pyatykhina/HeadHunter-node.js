@@ -13,7 +13,7 @@ module.exports.createVacancy = (req, res) => {
 
   let item = new Model({
     date: req.body.date,
-    name: req.body.name,
+    title: req.body.title,
     phone: req.body.phone,
     salary: req.body.salary,
     town: req.body.town,
