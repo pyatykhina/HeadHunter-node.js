@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{{htmlWebpackPlugin.options.title}}</title>
-        <link rel='stylesheet' href='/assets/css/style.css'>
+        <link rel='stylesheet' href='/css/style.css'>
     </head>
     <body>
         <div class="container">
@@ -18,7 +18,7 @@
                             <li class="list__item">
                                 <div class="list__line">
                                     <div class="list__column">
-                                        <div class="list__name">{{this.name}}</div>
+                                        <div class="list__name">{{this.title}}</div>
                                         <div class="list__town">{{this.town}}</div>
                                     </div>
                                     <div class="list__salary">{{this.salary}} руб.</div>
@@ -38,7 +38,7 @@
                         {{/each}}
                     </ul>
                 </div>
-                <form class="form" action="/vacancies/add" method="POST" enctype="application/x-www-form-urlencoded">
+                <form class="form" id="vacancies-form" action="/vacancies/add" method="POST" enctype="application/x-www-form-urlencoded">
                     <div class="form__title">Не нашли то, что искали?<br>Добавьте свою вакансию</div>
                     {{> form}}
                 </form>

@@ -1,5 +1,5 @@
 .index {
-    background-image: url("/assets/images/background.png");
+    background-image: url("/images/background.png");
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,8 @@
 }
 
 .index__button {
+    display: flex;
+    align-items: center;
     height: 50px;
     border: none;
     font-size: 20px;

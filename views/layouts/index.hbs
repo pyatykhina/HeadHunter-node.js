@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>{{htmlWebpackPlugin.options.title}}</title>
-        <link rel='stylesheet' href='/assets/css/style.css'>
+        <link rel='stylesheet' href='/css/style.css'>
+        <script src="/js/main.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="container main-container">
@@ -11,8 +12,8 @@
             <div class="content index">
                 <div class="index__title">Работа </br> для каждого</div>
                 <div class="index__buttons">
-                    <button class="index__button">Разместить вакансию</button>
-                    <button class="index__button">Разместить резюме</button>
+                    <a href="/vacancies#vacancies-form" class="index__button">Разместить вакансию</a>
+                    <a href="/summaries#summaries-form" class="index__button">Разместить резюме</a>
                 </div>
             </div>
             {{> footer}}
